@@ -6,6 +6,9 @@ data "aws_iam_policy_document" "efs_csi_driver" {
       "elasticfilesystem:DescribeAccessPoints",
       "elasticfilesystem:DescribeFileSystems",
       "elasticfilesystem:DescribeMountTargets",
+      "elasticfilesystem:TagResource",
+      "elasticfilesystem:UntagResource",
+      "elasticfilesystem:ListTagsForResource",
       "ec2:DescribeAvailabilityZones"
     ]
     resources = ["*"]
